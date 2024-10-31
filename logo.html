@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo Design</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            /* Center vertically in the viewport */
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 5px solid black;
+            /* Circular border */
+            border-radius: 50%;
+            /* Makes it circular */
+            width: 150px;
+            /* Width of the logo */
+            height: 150px;
+            /* Height of the logo */
+            position: relative;
+            font-size: 70px;
+            gap: 0;
+            /* Remove any space between letters */
+            /* Adjust font size for all letters */
+        }
+
+        .letter {
+            font-weight: bold;
+            /* Bold letters */
+            color: transparent;
+            margin: 0;
+            /* Make empty letters transparent */
+        }
+
+        .letter.n {
+            color: black;
+            /* Black fill for 'N' */
+        }
+
+        .letter.v {
+            color: brown;
+            transform: scale(1, 0.7) translateY(-9px);
+            margin-left: -17px;
+            /* Reduce height of 'V' and move it up */
+            /* Make 'V' brown */
+        }
+
+        .letter.i {
+            color: brown;
+            margin-left: -17px;
+            /* Make 'I' brown */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="logo-container">
+        <div class="logo">
+            <span class="letter n">N</span>
+            <span class="letter v">V</span>
+            <span class="letter i">I</span>
+        </div>
+    </div>
+</body>
+
+</html>
